@@ -8,7 +8,7 @@ function App() {
 
   const fetchEmployees = async () => {
     const response = await axios.get(
-      "http://127.0.0.1:8000/api/employees/"
+      "https://full-s2wo.onrender.com/api/employees/"
     );
 
     setEmployees(response.data);
@@ -16,7 +16,7 @@ function App() {
 
   const addEmployee = async () => {
     const response = await axios.post(
-      "http://127.0.0.1:8000/api/employees/",
+      "https://full-s2wo.onrender.com/api/employees/",
       {
         name,
         role,
